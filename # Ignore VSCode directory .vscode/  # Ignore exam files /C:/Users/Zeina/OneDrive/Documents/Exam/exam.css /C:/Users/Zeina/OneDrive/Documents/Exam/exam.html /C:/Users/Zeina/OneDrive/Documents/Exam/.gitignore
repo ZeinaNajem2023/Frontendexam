@@ -1,0 +1,7 @@
+# Ignore VSCode directory
+.vscode/
+
+# Ignore exam files
+/C:/Users/Zeina/OneDrive/Documents/Exam/exam.css
+/C:/Users/Zeina/OneDrive/Documents/Exam/exam.html
+/C:/Users/Zeina/OneDrive/Documents/Exam/exam.js
