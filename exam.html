@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="exam.css">
+    <title>Fruits Legumes</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container pt-5">
+        <div class="box mt-5 ml-3 p-2 bg-info text-white rounded">
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="text" placeholder="Fruits or Legumes" required>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="fruit" id="fruit" value="fruit" class="form-check-input "> <label for="fruit" class="form-check-label">Fruits </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="fruit" id="legume" value="legume" class="form-check-input"> <label for="legume" class="form-check-label"> Legumes</label>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary mr-3"  onclick="addToSpecificList()">Add to specific list</button> 
+                    <button class="btn btn-danger"  onclick="addToGeneralList()">Add to general list</button> 
+                </div>
+            </div>
+        </div>
+        <div class="box1 mt-3 mr-3 p-2 bg-primary text-white rounded">
+            <div class="row mt-2 ml-5">
+                <div class="col-sm-4 pr-5 mb-3">
+                    <button class="btn btn-info mr-2" onclick="searchItems()">Search for item</button>
+                    <button class="btn btn-danger" onclick="deleteSelectedItems()">Delete an item</button> 
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search for Fruits or Legumes" required>
+                </div>
+            </div>
+            <hr> 
+            <div class="container pt-2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="listoffruits ml-2 mt-1">
+                            <h4> List of Fruits</h4>
+                            <div class="col-sm-12 custom-bg">
+                                <ul class="list-group d-md-block p-2">
+                                    <li class="list-group-item list-group-item-success">Fruits! - Apple</li>
+                                    <li class="list-group-item list-group-item-success">Fruits! - Mangoes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <div class="listoffruitslegumes ml-2 mt-1">
+                            <h4> List of Fruits & Legumes</h4>
+                            <div class="col-sm-12 custom-bg">
+                                <ul class="list-group d-md-block p-2">
+                                    <li class="list-group-item list-group-item-success">Fruits! - Pineapples</li>
+                                    <li class="list-group-item list-group-item-success">Fruits! - Bananas</li>
+                                    <li class="list-group-item list-group-item-success">Legumes! - Potato</li>
+                                    <li class="list-group-item list-group-item-success">Legumes! - Lentils</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="listoflegumes ml-2 mt-1">
+                            <h4> List of Legumes</h4>
+                            <div class="col-sm-12 custom-bg">
+                                <ul class="list-group d-md-block p-2">
+                                    <li class="list-group-item list-group-item-success">Legumes! - Broccoli</li>
+                                    <li class="list-group-item list-group-item-success">Legumes! - Green Beans</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="exam.js"></script>
+</body>
+
+</body>
+</html>

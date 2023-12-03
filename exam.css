@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(176deg, rgba(83,181,245,0.8240546218487395) 25%, rgba(255,255,255,1) 99%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.box{
+    width:95%;
+    box-shadow: 10px 10px 5px #888888;
+}
+.box1{
+    box-shadow: 10px 5px 5px #888888;
+}
+input[type="radio"] {
+    width: 0.9em;
+    height: 1em;
+    border-radius: 50%;
+}
+h4{
+    text-shadow: 2px 2px 4px #d52cbf;
+
+}
+.container > .box:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.container > .box1:hover {
+    transform: translateY(10px) scale(1.1);
+    transition: 0.5s ease;
+}
+
+
+hr{
+    border: 3px solid #3893d0; 
+    margin: 5px 5px; 
+    box-shadow: 0 0 10px rgba(100,0 , 200);
+}
+.custom-bg {
+    background-color: #28a745; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+}
+
+.listoffruits li,
+.listoffruitslegumes li,
+.listoflegumes li {
+    display: inline-block;
+    width: 290px;
+    margin: 2px;
+    margin-top: 8px;
+    border: 2px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.listoffruits li {
+    color: rgb(8, 8, 110);
+    background-color: #b8dec1;
+}
+
+.listoffruitslegumes li {
+    color: blue;
+    background-color: rgb(192, 192, 240);
+}
+
+.listoflegumes li {
+    color: rgb(110, 42, 8);
+    background-color: #e1caa9;
+}
+.listoffruits li:hover,
+.listoffruitslegumes li:hover,
+.listoflegumes li:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 0 12px rgba(0, 0, 255, 0.5); 
+}
+
