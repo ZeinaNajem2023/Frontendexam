@@ -1,0 +1,7 @@
+# Ignore VSCode directory
+.vscode/
+
+# Ignore exam files
+Exam/exam.css
+Exam/exam.html
+Exam/exam.js
